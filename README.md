@@ -14,14 +14,14 @@
 
 > The directory structure
 
-├── fish.js
-├── folder_with_index
-│   ├── index.js
-│   └── other_file.js
-├── other_file.js
-└── other_folder
-    ├── badger.js
-    └── badger_fish.js
+├── fish.js   
+├── folder_with_index   
+│   ├── index.js   
+│   └── other_file.js   
+├── other_file.js   
+└── other_folder   
+    ├── badger.js   
+    └── badger_fish.js   
 
 > result
 
