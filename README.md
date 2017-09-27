@@ -4,7 +4,7 @@
 
 - `dir`  {String}   is the directory path
 - `options` {Object} 
-  -  `exclude`: {String}  RegExp pattern, exclude same module  
+  -  `exclude`: {String}  RegExp pattern, exclude module which name match reg rules   
   -  `case`:    {String}  The object field style. the value range {camel, snake,  kebab ,capitalized).   (default `camel`) 
   -  `depth`:   {Number} limit the sub-directory search depth   (default `Number.MAX_VALUE `)  
 
