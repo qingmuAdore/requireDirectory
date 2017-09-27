@@ -2,13 +2,11 @@
 
 ## function(dir,options)
 
-```
-@param {String} dir dirpath
-@param {Object} options 
-    options.exclude {String} RegExp pattern, exclude same module  
-    options.case    {String} The object field style. the value range {camel, snake,  kebab ,capitalized)   [default:'camel']
-    options.depth   {Number} limit the sub-directory search depth    [default: Number.MAX_VALUE ]
-```
+- `dir`  {String}   is the directory path
+- `options` {Object} 
+  -  `exclude`: {String}  RegExp pattern, exclude same module  
+  -  `case`:    {String}  The object field style. the value range {camel, snake,  kebab ,capitalized).   (default `camel`) 
+  -  `depth`:   {Number} limit the sub-directory search depth   (default `Number.MAX_VALUE `)  
 
 ## example
 
