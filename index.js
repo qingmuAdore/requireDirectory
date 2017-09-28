@@ -60,7 +60,7 @@ module.exports = exportDir = function (dir, options = {}) {
     };
     options = Object.assign({}, defaultOptions, options);
     var paths = fs.readdirSync(dir).map(function (item) {
-        return path.join(dir, item);
+        return path.resolve(dir, item);
     });
     if (options.exclude) {
         paths = paths.filter(function (item) {
@@ -71,11 +71,7 @@ module.exports = exportDir = function (dir, options = {}) {
     paths.forEach(function (item) {
         var ap = analysePath(item);
         var fieldName = convertCase(ap.name, options.case);
-        try {
-            if (ap.type == TYPE.File) result[fieldName] = require(item);
-        } catch (error) {
-
-        }
+        if (ap.type == TYPE.File) result[fieldName] = require(item);
         if (ap.type == TYPE.Directory && options.depth >= 0) result[fieldName] = exportDir(item, options);
     });
     return result;
